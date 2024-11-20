@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Ideas Organizer</title>
+  </head>
+  <body>
+    <div id="top-section">
+      <h1>Welcome to the Gift Ideas Organizer</h1>
+    </div>
+
+    <div class="container">
+      <div class="form-container">
+        <h2>Add a Gift Idea</h2>
+        <form id="giftForm">
+          <label for="recipient">Name:</label>
+          <input type="text" id="recipient" name="recipient" required />
+
+          <label for="gift">Gift:</label>
+          <input type="text" id="gift" name="gift" required />
+
+          <label for="store">Store:</label>
+          <input type="text" id="store" name="store" />
+
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" step="0.01" />
+
+          <label for="occasion">Occasion:</label>
+          <select id="occasion" name="occasion">
+            <option value="Birthday">Birthday</option>
+            <option value="Holiday">Holiday</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label>
+            <input type="checkbox" id="purchased" name="purchased" />
+            Purchased
+          </label>
+
+          <button type="submit">Add Gift</button>
+        </form>
+      </div>
+
+      <div class="list-container">
+        <h2>Gift Ideas</h2>
+        <div id="giftList"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightcoral;
+}
+
+#top-section {
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  height: 45vh;
+  background-image: url("images/santa.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  gap: 10%;
+  width: 1400px;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.6rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.list-container {
+  width: 50%;
+}
+
+#giftList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gift-item {
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border-left: 4px solid #28a745;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 40%;
+}
+
+.delete-btn {
+  background-color: red;
+}
+.gift-item h3 {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.gift-item .details {
+  font-size: 0.9rem;
+  color: black;
+}
